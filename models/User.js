@@ -20,7 +20,7 @@ const userShcema = mongoose.Schema({
         type: String,
         maxLength: 5
     },
-    name : {
+    lastName : {
         type: String,
         maxLength: 50
     },
@@ -30,13 +30,13 @@ const userShcema = mongoose.Schema({
     },
     image : String,
     token : {
-        type: String,
+        type: String
     },
     tokenExp : {
-        type: Number,
+        type: Number
     }
 })
 
 const User = mongoose.model('User', userShcema);
 
-module.exports = {}
+module.exports = {User}
